@@ -11,10 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val btnApply = findViewById<Button>(R.id.btnApply)
         val etName = findViewById<EditText>(R.id.etName)
         val etAge = findViewById<EditText>(R.id.etAge)
         val etCountry = findViewById<EditText>(R.id.etCountry)
-        val btnApply = findViewById<Button>(R.id.btnApply)
 
         btnApply.setOnClickListener {
             val name = etName.text.toString()
@@ -26,6 +26,5 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
-
     }
 }

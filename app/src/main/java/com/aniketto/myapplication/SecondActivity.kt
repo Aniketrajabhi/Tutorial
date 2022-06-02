@@ -13,7 +13,6 @@ class SecondActivity : AppCompatActivity() {
 
         val tvPerson = findViewById<TextView>(R.id.tvPerson)
         val person = intent.getSerializableExtra("EXTRA_PERSON") as Person
-
         tvPerson.text = person.toString()
     }
 }

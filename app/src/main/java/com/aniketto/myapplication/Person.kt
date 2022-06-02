@@ -7,4 +7,3 @@ data class Person(
     val age: Int,
     val country : String
 ) :Serializable
-
